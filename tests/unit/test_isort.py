@@ -1715,7 +1715,6 @@ def test_order_by_type() -> None:
 
 
 @pytest.mark.parametrize("has_body", [True, False])
-# @pytest.mark.parametrize("has_body", [False])
 def test_custom_lines_before_import_section(has_body) -> None:
     """Test the case where the number of lines to output before imports has been explicitly set."""
     test_input = "from a import b\n"
